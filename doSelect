@@ -120,7 +120,7 @@ class EmployeeImplementation {
     				ssn=s;
     				s="";
     			}
-    			if(ch=='@') {
+    			if(ch=='#') {
     				dept=s;
     				s="";
     			}
