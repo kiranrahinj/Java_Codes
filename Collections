@@ -1,0 +1,28 @@
+//TV Show
+
+import java.util.*;
+class Source {
+
+    public String printIndex(ArrayList<String> list, int ind) {
+    	//we need to print only string from that given index ind
+        return list.get(ind);
+    }
+
+    public ArrayList<String> addAfter(ArrayList<String> a, String m, String n){
+    	//getting index of m
+    	int m_index=a.indexOf(m);
+    	
+    	//putting string n in list after m_index
+    	a.add(m_index+1 ,n);
+        return a;
+    }
+
+    public ArrayList<String> pickIndexAndAppend(ArrayList<String> p, int ind){
+    	//getting the string at given index
+    	String s=p.get(ind);
+    	
+    	//adding the string 's' at end-- using add method we are inserting value at end
+    	p.add(s);
+        return p;
+    }
+}
