@@ -26,3 +26,34 @@ class Source {
         return p;
     }
 }
+----------------------------------------------------------------------------------------
+//Set operation
+
+import java.util.*;
+
+ class Source1 {
+
+    public Set<Integer> subtract(Set<Integer> a, Set<Integer> b){
+    	
+    	for(int k:b) {
+    		if(a.contains(k))a.remove(k);
+    	}
+    	
+        return a;
+    }
+
+    public Set<Integer> union(Set<Integer> a, Set<Integer> b){
+    	for(int k:b) {
+    		a.add(k);
+    	}
+        return a;
+    }
+    
+    public Set<Integer> intersect(Set<Integer> a, Set<Integer> b){
+    	for(int k:b) {
+    		if(! a.contains(k))a.remove(k);
+    	}
+    	
+        return a;
+    }
+}
